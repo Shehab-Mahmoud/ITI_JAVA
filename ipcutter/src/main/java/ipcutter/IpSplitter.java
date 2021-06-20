@@ -35,16 +35,26 @@ public class IpSplitter {
         }
         return partsInt;
     }
-    /**
-     * prints the values of the int array of ip.
-     * @param p set to true in case of print.
-     */
-    public void splitIP(boolean p){
+        public int [] splitIP(boolean p){
+        String [] parts = ip.split("\\.");
+        int [] partsInt = new int[parts.length];
+        for(int i=0;i<parts.length;i++){
+            partsInt[i] = Integer.parseInt(parts[i]);
+        }
+        if(p == true){
+            for(int val:partsInt){
+                System.out.println(val);
+            }
+        }
+        return partsInt;
+    }
+
+    /*public void splitIP(boolean p){
         int[] partsInt = splitIP();
         if(p == true){
             for(int val:partsInt){
                 System.out.println(val);
             }
         }
-    }
+    }*/
 }
