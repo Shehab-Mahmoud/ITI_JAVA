@@ -22,39 +22,44 @@ public class IpSplitter {
     }
 
     public void setIp(String ip) {
-        this.ip = ip;
+        // check if object is constructed with a valid string
+        if(ip != null && ip.isEmpty()){
+            this.ip = ip;
+        }
+        else{
+            System.out.println("Invalid ip address");
+        }
     }
     /** 
      * @return integer array of ip parts.
      */
     public int [] splitIP(){
+        // split the ip string into its 4 parts
         String [] parts = ip.split("\\.");
+        // intialize a new int array of length of ip parts
         int [] partsInt = new int[parts.length];
-        for(int i=0;i<parts.length;i++){
-            partsInt[i] = Integer.parseInt(parts[i]);
+        /* check if ip has 4 parts
+        if True start parsing to int.
+        */
+        if(parts.length==4){
+            for(int i=0;i<parts.length;i++){
+                partsInt[i] = Integer.parseInt(parts[i]);
+            }           
         }
-        return partsInt;
-    }
-        public int [] splitIP(boolean p){
-        String [] parts = ip.split("\\.");
-        int [] partsInt = new int[parts.length];
-        for(int i=0;i<parts.length;i++){
-            partsInt[i] = Integer.parseInt(parts[i]);
-        }
-        if(p == true){
-            for(int val:partsInt){
-                System.out.println(val);
-            }
-        }
+        // return the int array of ip
         return partsInt;
     }
 
-    /*public void splitIP(boolean p){
+    /**
+     * overloaded splitIP to print the ip parts if true is passed
+     * @param p if true it prints ip parts.
+     */
+    public void splitIP(boolean p){
         int[] partsInt = splitIP();
         if(p == true){
             for(int val:partsInt){
                 System.out.println(val);
             }
         }
-    }*/
+    }
 }
