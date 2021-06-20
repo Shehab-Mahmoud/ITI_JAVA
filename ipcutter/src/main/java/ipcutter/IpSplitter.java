@@ -11,6 +11,7 @@ package ipcutter;
  */
 public class IpSplitter {
     private String ip;
+    
 
     public IpSplitter(String ip) {
         this.ip = ip;
