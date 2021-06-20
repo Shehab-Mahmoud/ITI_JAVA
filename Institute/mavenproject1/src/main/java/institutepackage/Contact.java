@@ -16,6 +16,7 @@ public class Contact {
     private final String name;
 
     
+    
     public Contact(String name,String phoneNumber, String email, String address) {
         this.phoneNumber = phoneNumber;
         this.email = email;
