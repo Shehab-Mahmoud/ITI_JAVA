@@ -16,6 +16,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class CountryDAOIMPL implements CountryDAO{
@@ -91,7 +92,11 @@ public class CountryDAOIMPL implements CountryDAO{
         }
         return population_list;
     }
-
+    /**
+     * gets average population
+     * @param list
+     * @return double
+     */
     @Override
     public double avgPopulation(List<Double> list){
 
@@ -102,7 +107,11 @@ public class CountryDAOIMPL implements CountryDAO{
      return avg;
 
     }
-
+    /**
+     * Get maximum population
+     * @param list
+     * @return 
+     */
     @Override
     public double maxPopulation(List<Double> list){
 
@@ -111,6 +120,23 @@ public class CountryDAOIMPL implements CountryDAO{
       .summaryStatistics();
       double max = summaryStats.getMax();
      return max;
+    }
+    /**
+     * Highest population capital
+     * @param cities list
+     * @return City
+     */
+    public City highestPopCapital(List<City>cities){
+        // Stream to get all capitals id
+        List<Integer> capitals_id = this.countries.stream()
+                .map(Country::getCapital)
+                .collect(Collectors.toList());
+        // Stream to get sorted capitals according to population
+        List<City> capitals = cities.stream()
+                .filter(c ->capitals_id.contains(c.getId()))
+                .sorted((City a,City b)-> a.getPopulation()-b.getPopulation())
+                .collect(Collectors.toList());
+        return capitals.get(capitals.size()-1);
     }
 
 }

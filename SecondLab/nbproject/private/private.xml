@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/iti/Java/SecondLab/src/secondlab/Country.java</file>
-            <file>file:/D:/iti/Java/SecondLab/src/secondlab/CountryCityInter.java</file>
-            <file>file:/D:/iti/Java/SecondLab/src/secondlab/CityDAOIMPL.java</file>
-            <file>file:/D:/iti/Java/SecondLab/src/secondlab/CountryDAO.java</file>
-            <file>file:/D:/iti/Java/SecondLab/src/secondlab/City.java</file>
-            <file>file:/D:/iti/Java/SecondLab/src/secondlab/CountryDAOIMPL.java</file>
-            <file>file:/D:/iti/Java/SecondLab/src/secondlab/CityDAO.java</file>
-            <file>file:/D:/iti/Java/SecondLab/src/secondlab/SecondLab.java</file>
+            <file>file:/D:/iti/Java/ITI_JAVA2/SecondLab/src/secondlab/CityDAOIMPL.java</file>
+            <file>file:/D:/iti/Java/ITI_JAVA2/SecondLab/src/secondlab/SecondLab.java</file>
+            <file>file:/D:/iti/Java/ITI_JAVA2/SecondLab/src/secondlab/CountryDAOIMPL.java</file>
         </group>
     </open-files>
 </project-private>
