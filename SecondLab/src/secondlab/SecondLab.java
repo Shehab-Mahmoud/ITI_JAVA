@@ -10,8 +10,7 @@ package secondlab;
  * @author Kimo Store
  */
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class SecondLab {
 
@@ -51,13 +50,16 @@ public class SecondLab {
         Map<String,List<City>> cities =cityObject.codeCityMap();
         System.out.println(cities);
         
-        // Sorted cities for a given country
-        List<City> sorted = cityObject.getSortedCities("NZL");
+        // Sorted cities for a given country (console)
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the Country code to get sorted cities :");
+        String input = scan.nextLine();
+        List<City> sorted = cityObject.getSortedCities(input);
         System.out.println(sorted);
         
         // Sort cities by population
         Map<String,City> sortedCity = cityObject.highestPopPerCity();
-        System.out.println(sortedCity);
+        //System.out.println(sortedCity);
         
         // Highest population capital
         City capital = countryObject.highestPopCapital(cityList);
