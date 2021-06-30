@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 package lambdademo;
-import java.util.*;
-import java.util.function.BiPredicate;
+
 
 /**
  *
