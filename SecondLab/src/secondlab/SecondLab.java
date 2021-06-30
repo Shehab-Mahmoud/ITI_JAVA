@@ -63,7 +63,7 @@ public class SecondLab {
         
         // Highest population capital
         City capital = countryObject.highestPopCapital(cityList);
-        System.out.println("Highest population capital is:\n \n"+capital);
+        System.out.println("Highest population capital is: "+capital.getName()+" and its population is: "+capital.getPopulation());
     }
     
 }
