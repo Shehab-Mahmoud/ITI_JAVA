@@ -10,7 +10,7 @@ package isletter;
  */
 public class main {
     public static void main(String[] args){
-        String s = "shehab";
+        String s = "5445";
         StringOps st = new StringOps(s);
         
         boolean f = st.isAlphapet();
