@@ -10,18 +10,37 @@ package titanicdata;
  * @author shehab
  */
 public class Person {
+    private String pclass;
+    private String survived;
     private String name;
-    private String email;
-    private String country;
-    private double salary;
-    private double experience;
+    private String sex;
+    private double age;
+    private String sibsp;
+    private String parch;
+    private String ticket;
+    private double fare;
+    private String cabin;
+    private String embarked;
+    private String boat;
+    private String body;
+    private String home_dest;
 
-    public Person(String name, String email, String country, double salary, double experience) {
+    public Person(String pclass, String survived, String name, String sex, double age, String sibsp, String parch, String ticket, double fare, String cabin, String embarked, String boat, String body, String home_dest) {
+        this.pclass = pclass;
+        this.survived = survived;
         this.name = name;
-        this.email = email;
-        this.country = country;
-        this.salary = salary;
-        this.experience = experience;
+        this.sex = sex;
+        this.age = age;
+        this.sibsp = sibsp;
+        this.parch = parch;
+        this.ticket = ticket;
+        this.fare = fare;
+        this.cabin = cabin;
+        this.embarked = embarked;
+        this.boat = boat;
+        this.body = body;
+        this.home_dest = home_dest;
     }
+
     
 }

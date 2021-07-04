@@ -56,5 +56,8 @@ public class main {
         System.out.println("1.Column structure : \n"+dataStructure);
         System.out.println("2.Full Structure:\n"+titanicData.structure());
         System.out.println("3.Summary statstics : \n"+titanicData.summary());
+        
+        // using xChart
+        
     }
 }
