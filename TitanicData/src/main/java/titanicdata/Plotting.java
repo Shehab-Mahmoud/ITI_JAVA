@@ -104,7 +104,7 @@ public class Plotting {
 
     
     public void graphPassengersurvivedGender(List<Person> passengerList) {
-    //filter to get a map of passenger class and total number of passengers in each class
+    //filter to get a map of survived and gender
     Map<Pair<String,String>, Long> result =
             passengerList.stream()
                     .collect (Collectors.groupingBy(pairs ->new Pair(pairs.getSurvived(),pairs.getSex()),Collectors.counting() ) );
