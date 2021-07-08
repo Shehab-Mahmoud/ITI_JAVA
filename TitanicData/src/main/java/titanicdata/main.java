@@ -57,7 +57,15 @@ public class main {
         System.out.println("2.Full Structure:\n"+titanicData.structure());
         System.out.println("3.Summary statstics : \n"+titanicData.summary());
         
-        // using xChart
+        // using xChart - jaxson
+        Plotting plotObj = new Plotting();
+        String pathJson = "D:\\iti\\Java\\day5\\Data_to_use\\titanic_csv.json";
+        List<Person> data = plotObj.getPassengersFromJson(pathJson);
+        // plot passengers ages
+        plotObj.graphPassengerAges(data);
+        plotObj.graphPassengerClass(data);
+        plotObj.graphPassengerSurvived(data);
+        plotObj.graphPassengersurvivedGender(data);
         
     }
 }

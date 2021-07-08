@@ -14,33 +14,129 @@ public class Person {
     private String survived;
     private String name;
     private String sex;
-    private double age;
+    private float age;
     private String sibsp;
     private String parch;
     private String ticket;
-    private double fare;
+    private float fare;
     private String cabin;
     private String embarked;
     private String boat;
     private String body;
-    private String home_dest;
+    private String home_dist;
 
-    public Person(String pclass, String survived, String name, String sex, double age, String sibsp, String parch, String ticket, double fare, String cabin, String embarked, String boat, String body, String home_dest) {
+
+
+    public void setPclass(String pclass) {
         this.pclass = pclass;
-        this.survived = survived;
-        this.name = name;
-        this.sex = sex;
-        this.age = age;
-        this.sibsp = sibsp;
-        this.parch = parch;
-        this.ticket = ticket;
-        this.fare = fare;
-        this.cabin = cabin;
-        this.embarked = embarked;
-        this.boat = boat;
-        this.body = body;
-        this.home_dest = home_dest;
     }
 
+    public String getPclass() {
+        return pclass;
+    }
+
+    public String getSurvived() {
+        return survived;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public float getAge() {
+        return age;
+    }
+
+    public String getSibsp() {
+        return sibsp;
+    }
+
+    public String getParch() {
+        return parch;
+    }
+
+    public String getTicket() {
+        return ticket;
+    }
+
+    public float getFare() {
+        return fare;
+    }
+
+    public String getCabin() {
+        return cabin;
+    }
+
+    public String getEmbarked() {
+        return embarked;
+    }
+
+    public String getBoat() {
+        return boat;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public String getHome_dist() {
+        return home_dist;
+    }
+
+    public void setSurvived(String survived) {
+        this.survived = survived;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public void setAge(float age) {
+        this.age = age;
+    }
+
+    public void setSibsp(String sibsp) {
+        this.sibsp = sibsp;
+    }
+
+    public void setParch(String parch) {
+        this.parch = parch;
+    }
+
+    public void setTicket(String ticket) {
+        this.ticket = ticket;
+    }
+
+    public void setFare(float fare) {
+        this.fare = fare;
+    }
+
+    public void setCabin(String cabin) {
+        this.cabin = cabin;
+    }
+
+    public void setEmbarked(String embarked) {
+        this.embarked = embarked;
+    }
+
+    public void setBoat(String boat) {
+        this.boat = boat;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public void setHome_dist(String home_dist) {
+        this.home_dist = home_dist;
+    }
     
 }
