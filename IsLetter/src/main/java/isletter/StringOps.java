@@ -18,7 +18,7 @@ public class StringOps {
     }
     public boolean isAlphapet(){
         if(this.s != null){
-            if( !this.s.isEmpty()|| !this.s.isBlank()){
+            if( !this.s.isEmpty()){
                 boolean alpha = this.s.chars()
                     .mapToObj(c -> (char)c)
                     .allMatch(Character::isLetter);
